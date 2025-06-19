@@ -1,5 +1,5 @@
 export const theme = {
-  spacing12: 12,
   colorGreen: "#29b365",
-  colorWhite: "#ffffff",
+  colorLeafyGreen: "#206a42",
+  colorWhite: "#fff",
 };
