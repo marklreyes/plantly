@@ -23,7 +23,7 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.anonymous.plantly"
+      "scheme": "com.anonymous.plantly"
     },
     "web": {
       "favicon": "./assets/favicon.png"
