@@ -21,6 +21,16 @@ export default function PlantDetails() {
   const navigation = useNavigation();
 
   useEffect(() => {
+    if (params.action === "water") {
+      if (typeof plantId === "string") {
+        waterPlant(plantId);
+      }
+    }
+    // we want to explicitly only do this on mount
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
     navigation.setOptions({
       title: plant?.name,
     });
