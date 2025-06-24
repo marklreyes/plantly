@@ -8,11 +8,6 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.anonymous.plantly"
@@ -23,7 +18,7 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "scheme": ["com.anonymous.plantly"]
+      "package": "com.anonymous.plantly"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -38,17 +33,29 @@
           ]
         }
       ],
+      [
+        "expo-quick-actions",
+        {
+          "androidIcons": {
+            "leaf": {
+              "foregroundImage": "./assets/leaf.png",
+              "backgroundColor": "#ffffff"
+            }
+          }
+        }
+      ],
 			[
-      	"expo-quick-actions",
-				{
-					"androidIcons": {
-						"leaf": {
-							"foregroundImage": "./assets/leaf.png",
-							"backgroundColor": "#ffffff"
-						}
-					}
-				}
-			],
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#9CF089",
+          "image": "./assets/splash-image.png",
+          "dark": {
+            "image": "./assets/splash-image.png",
+            "backgroundColor": "#56A082"
+          },
+          "imageWidth": 150
+        }
+			]
     ]
   }
 }
